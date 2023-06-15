@@ -28,7 +28,7 @@ Object(value)
 When the `Object()` constructor itself is called or constructed, its return value is an object:
 
 - If the value is [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null) or {{jsxref("undefined")}}, it creates and returns an empty object.
-- If the value is an object already, it returns the value.
+- If the value is an object already, it returns the reference value.
 - Otherwise, it returns an object of a type that corresponds to the given value. For example, passing a {{jsxref("BigInt")}} primitive returns a `BigInt` wrapper object.
 
 When `Object()` is implicitly called via [`super()`](/en-US/docs/Web/JavaScript/Reference/Operators/super) in the constructor of a class that [extends `Object`](/en-US/docs/Web/JavaScript/Reference/Classes/extends#extending_object), it initializes a new object with `new.target.prototype` as its prototype. Any value passed to `super()` is ignored — for example, even if you pass a number, the `this` value inside the constructor does not become a {{jsxref("Number")}} instance.
